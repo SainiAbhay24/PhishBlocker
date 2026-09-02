@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "PhishBlocker",
+  "version": "0.1.0",
+  "description": "Pre-navigation URL risk protection powered by the PhishBlocker Risk Engine.",
+  "permissions": ["webNavigation", "storage", "tabs"],
+  "host_permissions": ["http://*/*", "https://*/*", "http://localhost:8000/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PhishBlocker"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["warning.html", "warning.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

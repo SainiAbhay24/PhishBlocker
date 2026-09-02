@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<style>
+  body { width: 260px; font-family: -apple-system, Arial, sans-serif; padding: 14px; }
+  h2 { font-size: 15px; margin: 0 0 10px 0; display: flex; align-items: center; gap: 6px; }
+  .status { font-size: 13px; color: #444; }
+  .ok { color: #2e7d32; font-weight: 600; }
+</style>
+</head>
+<body>
+  <h2>🛡️ PhishBlocker</h2>
+  <div class="status">Status: <span class="ok">Active — monitoring navigation</span></div>
+  <div class="status" id="lastResult" style="margin-top:8px;">No recent scan for this tab.</div>
+  <script src="popup.js"></script>
+</body>
+</html>
