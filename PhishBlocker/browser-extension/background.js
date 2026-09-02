@@ -10,7 +10,7 @@
  * principle (Section 2 of the project doc).
  */
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://phishblocker-0x6x.onrender.com";
 
 
 // Avoid re-checking the same URL twice in a row (webNavigation can fire
