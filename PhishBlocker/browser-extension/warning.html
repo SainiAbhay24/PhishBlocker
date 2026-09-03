@@ -11,18 +11,23 @@
     --bg: #1b1f23;
     --card: #ffffff;
   }
-  body {
-    margin: 0;
-    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-    background: var(--bg);
-    color: #1b1f23;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 24px;
-    box-sizing: border-box;
-  }
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+    font-size: 13px;
+    color: rgba(34, 197, 94, 0.22); /* Glowing Matrix Green */
+    pointer-events: none;
+    white-space: pre-wrap;
+    padding: 30px;
+    z-index: -1;
+    line-height: 1.8;
+    text-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
+}
   .card {
     background: var(--card);
     max-width: 560px;
